@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // api rest pour register (creation du compte user )
 
 header("Access-Control-Allow-Origin: *");
@@ -22,9 +22,10 @@ if (!empty($data->username)&& !empty($data->password)){
 
     if ($user->register()){
         http_response_code(201);
-        echo json_encode(array("message"=> "Utilidateur créé."));
+        echo json_encode(array("message"=> "Utilisateur créé."));
     }else {
-        http_response_code(503);
+         http_response_code(500);
+        echo json_encode(array("message"=> "exist"));
     }
 } else {
     http_response_code(400);

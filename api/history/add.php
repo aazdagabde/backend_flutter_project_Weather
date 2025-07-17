@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // add.php
 
 header("Access-Control-Allow-Origin: *");

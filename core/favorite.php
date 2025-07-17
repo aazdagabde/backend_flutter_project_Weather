@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class Favorite {
     private $conn;
     private $table_name = "favorites";

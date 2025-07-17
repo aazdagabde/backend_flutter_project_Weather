@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class Database {
     // Spécifiez vos propres informations de connexion
     private $host = "localhost";

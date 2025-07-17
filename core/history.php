@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class History {
     private $conn;
     private $table_name = "history";

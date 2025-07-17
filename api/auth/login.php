@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 // api rest pour login 
 
 header("Access-Control-Allow-Origin: *");
@@ -22,14 +22,14 @@ if(!empty($data->username)&& !empty($data->password)){
        
         http_response_code(200);
         echo json_encode(array(
-             "message" => "Connexion réussie.",
+             "message" => "Connexion reussie.",
             "user_id" => $user->id,
             "username" => $user->username
         ));
     }else {
         http_response_code(401);
         echo json_encode(
-            array("message"=>"Échec de la connexion.")
+            array("message"=>"echec de la connexion.")
         );
     }
 
@@ -37,7 +37,7 @@ if(!empty($data->username)&& !empty($data->password)){
 }else {
     http_response_code(400);
     echo json_encode(array(
-        "message" => "Données incomplètes"
+        "message" => "Donnees incompletes"
     ));
 }
 
